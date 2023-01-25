@@ -25,11 +25,11 @@ function TravelTable() {
         data.map((travel) =>{
           return (
             <div>
-              <Link to={`/travel/${travel._id}`}> {travel.country} </Link>
+              <Link to={`/travel/${travel._id}`}> {travel.country} 
                 
                <h3> {travel.date}</h3>
               <h3> {travel.description}</h3>
-               
+               </Link>
               
             </div>
           );
