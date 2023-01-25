@@ -1,5 +1,5 @@
 import axios from 'axios';
-const travelURL ="http://localhost:3001/travel"
+const travelURL ="https://travel-app-backend-urac.onrender.com/travel"
 
 //#region PACKAGE ROUTES
 export const getTravels = () => {
