@@ -10,7 +10,7 @@ The motivation for this project was simply to do better than my last. Nothing mo
 
  
 ## How to access
-[Travel Sticky](https://youtu.be/PcCKXM8O40o) -- you can visit the store here!
+[Travel Sticky](https://travel-app-frontend.onrender.com) -- you can visit the app here!
 
 ## Access
 If you want to load this site to your computer you need to fork and clone this repo

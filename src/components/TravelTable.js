@@ -18,7 +18,7 @@ function TravelTable() {
   return (
     <div>
      {console.log(data)}
-      <h1>THIS IS TRAVEL TABLE</h1>
+      <h2>Travel Dreams</h2>
       <ul>
       {
         data ?
