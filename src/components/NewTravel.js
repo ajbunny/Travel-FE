@@ -11,8 +11,7 @@ export default function CreateTravel() {
         const travel = {country: e.target.country.value, date: e.target.date.value,description: e.target.description.value }
         
     newTravel(travel)
-    .then((response)=> {
-       
+    .then(()=> {
         nav('/')
     })
       

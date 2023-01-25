@@ -18,9 +18,10 @@ export default function Travel() {
 
     const deleteTheTravel = () => {
         //delete function goes here
-        deleteTravel(id)
-        //navigate back to the main page
-        nav('/')
+        deleteTravel(id).then(()=>{
+                    nav('/')
+        })
+       
     }
     return(
         <div>
