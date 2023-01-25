@@ -8,7 +8,11 @@ function TravelTable() {
   const [data, setData] = useState([])
  
   useEffect(() => {
-    getTravels().then((res) => setData(res.data));
+    getTravels().then((res) => { 
+      setData(res.data)
+      console.log(res)
+      
+    })
   }, []);
 
   return (
@@ -20,15 +24,14 @@ function TravelTable() {
         data ?
         data.map((travel) =>{
           return (
-            <li>
-              <Link to={`/${travel._id}`}> 
-                <h3>
-                  {travel.country}
-                  {travel.date}
-                  {travel.description}
-                </h3>
-              </Link>
-            </li>
+            <div>
+              <Link to={`/travel/${travel._id}`}> {travel.country} </Link>
+                
+               <h3> {travel.date}</h3>
+              <h3> {travel.description}</h3>
+               
+              
+            </div>
           );
         }):<></>
            
@@ -40,16 +43,3 @@ function TravelTable() {
 
 export default TravelTable;
 
-//  <table>
-      //   {
-      //     data ? 
-      //    data.map((travel) => 
-          
-      //   return ( <tr>
-      //         <td>{travel.country}</td>
-      //         <td>{travel.date}</td>
-      //         <td>{travel.description}</td>
-      //       </tr>)
-      //     }): <></>
-      //   
-      //  </table>

@@ -8,9 +8,9 @@ export default function Navi() {
     <div className="navlinks"> 
 <Link to="/">Home</Link>
 <br/>
-<Link to="/editTravel">Edit Travel</Link>
+{/* <Link to="/editTravel">Edit Travel</Link>
 <br/>
-<Link to="/travel">Travel</Link>
+<Link to="/travel">Travel</Link> */}
 
 </div>
  </div>

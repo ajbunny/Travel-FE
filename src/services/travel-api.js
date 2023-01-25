@@ -2,14 +2,14 @@ import axios from 'axios';
 const travelURL ="http://localhost:3001/travel"
 
 //#region PACKAGE ROUTES
-export const getTravels = (id) => {
-    const URL = `${travelURL}/${id}`
+export const getTravels = () => {
+    const URL = `${travelURL}`
     const response = axios.get(URL)
     return response
 }
 //SHOW PACKAGE
-export const getTravel = () => {
-    const URL = `${travelURL}`
+export const getTravel = (id) => {
+    const URL = `${travelURL}/${id}`
     const response = axios.get(URL)
     return response
 }
@@ -20,10 +20,14 @@ export const editTravel = (id, updatedTravel) => {
     return response
 }
 
-// CREATE THE PACKAGE (new travel)
+// CREATE NEW TRAVEL (new travel)
 export const newTravel = (newtravel) => {
     const URL = travelURL
-    const response =axios.post(URL, newtravel)
+    console.log(newtravel)
+    const response =axios.post(URL, newtravel).then(res=> {
+        console.log(res.data)
+    })
+    console.log(response)
     return response
 }
 //DELETE THE LODGE

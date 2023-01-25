@@ -6,18 +6,28 @@ export default function CreateTravel() {
     
     const nav = useNavigate()
 
-    const New = (e) => {
+    const Tree = (e) => {
         e.preventDefault();
-        const travel = {country: e.target.travel.value, date: e.target.travel.value,description: e.target.description.value }
+        const travel = {country: e.target.country.value, date: e.target.date.value,description: e.target.description.value }
+        
     newTravel(travel)
+    .then((response)=> {
+       
         nav('/')
+    })
+      
     }
-
+     
     return (
     <div id="create">
       <h4> Create a New Dream Destination</h4> 
-        <form onSubmit={New}>
-            <input type="text" name='description' />
+        <form onSubmit={Tree}>
+          Country: <input type="text" name='country' />
+          <br/>
+           Date: <input type="text" name='date' />
+           <br/>
+        Description:<input type="text" name='description' />
+        <br/>
             <input type='submit' />
             </form>
     </div>

@@ -10,13 +10,13 @@ function App() {
   return (
     <div className="App">
       
-      <div id='title'><h1>Travel to-do List</h1> </div>
+      <div id='title'><h1>Travel Sticky Note</h1> </div>
         <Router> 
          <Navi/>
         <Routes>
         <Route path='/'element={<TravelTable />} />
-        <Route path='/travel'element={<Travel />} />
-        <Route path='/editTravel'element={<EditTravel />} />
+        <Route path='/travel/:id'element={<Travel />} />
+        <Route path='/editTravel/:id'element={<EditTravel />} />
         </Routes>
       </Router>
       

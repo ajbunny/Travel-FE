@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { getTravel, deleteTravel } from "../services/travel-api"
 import { useParams, useNavigate } from 'react-router-dom'
 
+
 export default function Travel() {
     //setting up the main page
     const nav = useNavigate()
@@ -27,9 +28,9 @@ export default function Travel() {
             <h3>Country: {travel.country}</h3>
             <h4>Date: {travel.date}</h4>
             <h4>Description: {travel.description} </h4>
-            <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button>
+            <button onClick={() => {nav(`/editTravel/${id}`)}}>Edit</button>
             <button onClick={deleteTheTravel}>Delete</button>
-            <button onClick={() => {nav('/')}}>Main</button>
+            <button onClick={() => {nav('/')}}>Home</button>
         </div>
     )
 }
