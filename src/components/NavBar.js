@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useNavigate, Link } from "react-router-dom";
+import  Button  from "react-bootstrap/button"
 
 
 export default function Navi() {
+    const nav = useNavigate();
   return ( 
+    
     <div>
     <div className="navlinks"> 
-<Link to="/">Home</Link>
-<br/>
-{/* <Link to="/editTravel">Edit Travel</Link>
-<br/>
-<Link to="/travel">Travel</Link> */}
+<Button variant='secondary' onClick={() => {nav('/')}}>Home</Button>
 
 </div>
  </div>

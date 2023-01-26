@@ -21,11 +21,17 @@ export default function CreateTravel() {
     <div id="create">
       <h4> Create a New Dream Destination</h4> 
         <form onSubmit={Tree}>
+        <div className="items">
           Country: <input type="text" name='country' />
+          </div>
           <br/>
+          <div className="items">
            Date: <input type="text" name='date' />
+           </div>
            <br/>
+           <div className="items">
         Description:<input type="text" name='description' />
+        </div>
         <br/>
             <input type='submit' />
             </form>

@@ -1,3 +1,86 @@
 :root {
-  background-color: rgba(237, 237, 121, 0.689);
+  background-color: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+}
+#title{
+  display: flex;
+  justify-content: center;
+  background-color: darkgoldenrod;
+  color: rgba(33, 29, 29, 0.931);
+  width: 100vw;
+  height:80px;
+ 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#editForm {
+  background-color:blanchedalmond ;
+  
+  border: rgb(141, 104, 9) solid 5px;
+  box-shadow: 10px 5px 5px rgba(228, 187, 72, 0.835);
+  margin: 20px;
+  justify-content: space-evenly;
+  font-weight: 600;
+}
+.items {
+  padding: 10px;
+}
+
+
+#TravelForm {
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  border:rgb(141, 104, 9) solid 5px;
+  box-shadow: 10px 5px 5px rgba(228, 187, 72, 0.835);
+  background-color:blanchedalmond ;
+ 
+  
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkgoldenrod ;
+ 
+}
+#TravelList {
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  justify-content: center;
+  border: rgb(141, 104, 9) solid 5px;
+  box-shadow: 10px 5px 5px rgba(228, 187, 72, 0.835);
+  
+}
+
+#newTravelForm {
+  border: darkgoldenrod solid 5px;
+  box-shadow: 10px 5px 5px rgba(228, 187, 72, 0.835);
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  background-color:darkgoldenrod ;
+}
+
+#create {
+  border:rgb(141, 104, 9) solid 5px;
+  box-shadow: 10px 5px 5px rgba(228, 187, 72, 0.835);
+  display: block;
+  width: auto;
+  height: 325px;
+ background-color:  blanchedalmond;
+ font-weight: 700;
+}
+
+#editDelete {
+  display: flex;
+  justify-content: center;
+   background-color:darkgoldenrod ;
+}
+h5 h2 {
+  text-decoration: none;
 }

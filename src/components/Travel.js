@@ -25,13 +25,15 @@ export default function Travel() {
     }
     return(
         <div>
-        
+            <div id='TravelForm'>
             <h3>Country: {travel.country}</h3>
             <h4>Date: {travel.date}</h4>
             <h4>Description: {travel.description} </h4>
+            </div>
+            <div id='editDelete'>
             <button onClick={() => {nav(`/editTravel/${id}`)}}>Edit</button>
             <button onClick={deleteTheTravel}>Delete</button>
-            <button onClick={() => {nav('/')}}>Home</button>
+           </div>
         </div>
     )
 }

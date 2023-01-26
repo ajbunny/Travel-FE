@@ -3,6 +3,7 @@ import { getTravels } from '../services/travel-api'
 import { useNavigate, Link } from "react-router-dom";
 import NewTravel from "./NewTravel"
 
+
 function TravelTable() {
    const nav = useNavigate();
   const [data, setData] = useState([])
@@ -17,18 +18,21 @@ function TravelTable() {
 
   return (
     <div>
+      <div id='container'> 
      {console.log(data)}
-      <h2>Travel Dreams</h2>
+     <div id='TravelList'>
+      <h1>Travel Dreams</h1>
       <ul>
       {
         data ?
         data.map((travel) =>{
           return (
             <div>
-              <Link to={`/travel/${travel._id}`}> {travel.country} 
-                
-               <h3> {travel.date}</h3>
-              <h3> {travel.description}</h3>
+               
+              <Link  to={`/travel/${travel._id}`}> 
+              <li> <h2> {travel.country} </h2></li>
+               <h5>{travel.date}</h5>
+               <h5>{travel.description}</h5>
                </Link>
               
             </div>
@@ -36,7 +40,11 @@ function TravelTable() {
         }):<></>
            
   }  </ul>
+  </div>
+  
        <NewTravel />
+      
+       </div>
     </div>
   )
 }
