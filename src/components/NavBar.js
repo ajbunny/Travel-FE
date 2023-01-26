@@ -1,6 +1,6 @@
 import React from "react";
-import {useNavigate, Link } from "react-router-dom";
-import  Button  from "react-bootstrap/button"
+import {useNavigate } from "react-router-dom";
+import  Button  from "react-bootstrap/Button"
 
 
 export default function Navi() {
